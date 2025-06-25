@@ -1,0 +1,182 @@
+/* Updated CSS in css/style.css */
+
+/* --- General Setup --- */
+:root {
+    --primary-color: #007bff; /* A standard blue, adjust as needed */
+    --dark-grey: #222;
+    --text-color: #333;
+    --light-grey: #f4f4f4;
+    --white-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--white-color);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Header --- */
+.main-header {
+    background-color: var(--dark-grey);
+    color: var(--white-color);
+    padding: 1rem 0;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header .logo img {
+    height: 40px; /* Adjust height as needed */
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+}
+
+.main-nav a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--primary-color);
+}
+
+
+/* --- Hero Section --- */
+.hero {
+    background: url('../images/intro.png') no-repeat center center/cover;
+
+     /* --- Key properties for the new look --- */
+     background-size: contain;      /* Shrinks the image to fit without cropping */
+     background-repeat: no-repeat;  /* Stops the image from tiling */
+     background-position: center;   /* Centers the image horizontally and vertically */
+ 
+
+    height: 60vh;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 0px;
+}
+
+.hero-content {
+    max-width: 300px;
+}
+
+.hero-content .hero-logo {
+    max-width: 300px; /* Adjust as needed */
+    margin-bottom: 1rem;
+}
+
+.hero-content h1 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 5px; /* Added border-radius */
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+    border-radius: 25px;
+    background-color: #2A50CE;
+    color: var(--white-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--white-color);
+    color: var(--dark-grey);
+}
+
+/* --- Intro Section --- */
+.intro-section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.intro-section h2 {
+    font-size: 2rem;
+    color: #0C3973;
+}
+
+.intro-section .subheading {
+    font-size: 1.1rem;
+    color: #1774CA;
+    margin-bottom: 1rem;
+}
+
+.intro-section p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* --- Image Section --- */
+.image-section {
+    text-align: center;
+}
+
+.battery-pack-image {
+    max-width: 70%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* --- Responsive Design --- */
+@media(max-width: 768px) {
+    .main-header .container {
+        flex-direction: column;
+    }
+
+    .main-header .logo {
+        margin-bottom: 1rem;
+    }
+
+    .main-nav ul {
+        padding: 0;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .intro-section h2 {
+        font-size: 1.5rem;
+    }
+}
