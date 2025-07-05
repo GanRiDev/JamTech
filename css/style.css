@@ -1,6 +1,5 @@
-/* --- General Setup --- */
 :root {
-    --primary-color: #007bff; /* A standard blue, adjust as needed */
+    --primary-color: #007bff;
     --dark-grey: #222;
     --text-color: #333;
     --light-grey: #f4f4f4;
@@ -14,7 +13,7 @@
 }
 
 html {
-    scroll-behavior: smooth; /* For smooth scrolling to anchor links */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -22,62 +21,60 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--white-color);
-    padding-top: 140px; /* Default padding for fixed header */
+    padding-top: 140px;
 }
 
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 20px; /* Default desktop padding */
+    padding: 0 20px;
 }
 
-/* --- Header --- */
 .main-header {
-    position: fixed; /* Make header sticky */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: black;
     color: var(--white-color);
-    padding: 1rem 0; /* Default desktop padding */
-    z-index: 1000; /* Ensure header stays on top of other content */
+    padding: 1rem 0;
+    z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .main-header .container {
     display: flex;
-    justify-content: center; /* Center the logo horizontally */
+    justify-content: center;
     align-items: center;
-    padding: 0 20px; /* Default desktop padding */
+    padding: 0 20px;
 }
 
-/* --- Hero Section --- */
 .hero {
     background: url('../images/intro.png') no-repeat center center/cover;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: 60vh; /* Default desktop height */
+    height: 60vh;
     color: var(--white-color);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 20px; /* Ensure horizontal padding for hero content */
+    padding: 0 20px;
 }
 
 .hero-content {
-    max-width: 300px; /* Limits content width on desktop */
+    max-width: 300px;
 }
 
 .hero-content .hero-logo {
-    max-width: 300px; /* Default desktop max width */
+    max-width: 300px;
     height: auto;
     margin-bottom: 1rem;
 }
 
 .hero-content h1 {
-    font-size: 2.3rem; /* Default desktop font size */
+    font-size: 2.3rem;
     margin-bottom: 1rem;
     font-weight: 700;
     line-height: 1.2;
@@ -103,20 +100,19 @@ body {
     color: var(--dark-grey);
 }
 
-/* --- Intro Section --- */
 .intro-section {
-    padding: 4rem 0; /* Default desktop padding */
+    padding: 4rem 0;
     text-align: center;
 }
 
 .intro-section h2 {
-    font-size: 2rem; /* Default desktop font size */
+    font-size: 2rem;
     color: #0C3973;
     margin-bottom: 1rem;
 }
 
 .intro-section .subheading {
-    font-size: 1.1rem; /* Default desktop font size */
+    font-size: 1.1rem;
     color: #1774CA;
     margin-bottom: 1rem;
 }
@@ -124,29 +120,27 @@ body {
 .intro-section p {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 20px; /* Default desktop horizontal padding */
+    padding: 0 20px;
 }
 
-/* --- Image Section --- */
 .image-section {
     text-align: center;
-    padding: 2rem 0; /* Default desktop padding */
+    padding: 2rem 0;
 }
 
 .battery-pack-image {
-    max-width: 70%; /* Default desktop width */
+    max-width: 70%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-/* About Us Section */
 .about {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
-    padding: 50px; /* Default desktop padding */
+    padding: 50px;
 }
 
 .about-content {
@@ -189,7 +183,7 @@ body {
 }
 
 .about-section {
-    padding: 4rem 2rem; /* Default desktop padding */
+    padding: 4rem 2rem;
     background-color: #fff;
     font-family: 'Roboto', sans-serif;
 }
@@ -200,11 +194,11 @@ body {
 }
 
 .about-content h1 {
-    font-size:4.5em; /* Default desktop font size */
+    font-size:4.5em;
 }
 
 .about-section h2 {
-    font-size: 2rem; /* Default desktop font size */
+    font-size: 2rem;
     color: #1a1a1a;
     margin-bottom: 2rem;
 }
@@ -219,7 +213,6 @@ body {
     color: #333;
 }
 
-/* CTA */
 .cta-container .btn {
     display: inline-flex;
     align-items: center;
@@ -251,7 +244,7 @@ body {
 }
 
 .cta-section {
-    padding: 5rem 0; /* Default desktop padding */
+    padding: 5rem 0;
 }
 
 .cta-container {
@@ -265,13 +258,13 @@ body {
 }
 
 .cta-text h2 {
-    font-size: 2.2rem; /* Default desktop font size */
+    font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
 .cta-text p {
-    font-size: 1.1rem; /* Default desktop font size */
+    font-size: 1.1rem;
     margin-bottom: 2rem;
     max-width: 450px;
 }
@@ -289,16 +282,15 @@ body {
     height: auto;
 }
 
-/* --- Footer Section --- */
 .site-footer {
     background-color: #000;
     color: #fff;
-    padding-top: 4rem; /* Default desktop padding */
+    padding-top: 4rem;
 }
 
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Default desktop 3 columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding-bottom: 3rem;
 }
@@ -311,7 +303,7 @@ body {
 }
 
 .footer-logo {
-    max-width: 200px; /* Default desktop max width */
+    max-width: 200px;
     height: auto;
 }
 
@@ -367,9 +359,8 @@ body {
     color: #aaa;
 }
 
-/* --- Featured Products Section --- */
 .featured-products-section {
-    padding: 4rem 0; /* Default desktop padding */
+    padding: 4rem 0;
     background-color: var(--light-grey);
 }
 
@@ -378,11 +369,11 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2.5rem;
-    padding: 0 20px; /* Default desktop horizontal padding */
+    padding: 0 20px;
 }
 
 .featured-products-title {
-    font-size: 2.5rem; /* Default desktop font size */
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--dark-grey);
     margin: 0;
@@ -414,7 +405,7 @@ body {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Default desktop grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
 }
 
@@ -465,8 +456,6 @@ body {
     color: var(--primary-color);
 }
 
-/* Visited Link Styles (from previous request, added here for completeness) */
-/* This block ensures visited links don't turn purple by default */
 .main-nav a,
 .main-nav a:visited,
 .view-all-link,
@@ -477,13 +466,8 @@ body {
 .footer-links a:visited,
 .social-links a,
 .social-links a:visited {
-    /* Inherit or explicitly set the desired color */
-    /* Example: if you want all links to be white on dark backgrounds, and blue on light: */
-    /* color: var(--primary-color); for light backgrounds */
-    /* color: var(--white-color); for dark backgrounds */
 }
 
-/* Specifically re-applying desired colors for clarity */
 .view-all-link,
 .view-all-link:visited {
     color: var(--primary-color);
@@ -506,115 +490,110 @@ body {
     color: #fff;
 }
 
-
-/* --- Responsive Design for MOBILE (max-width: 768px) --- */
 @media (max-width: 768px) {
-    /* General adjustments */
     body {
-        padding-top: 80px; /* Adjust body padding for mobile header height */
+        padding-top: 80px;
     }
 
     .container {
-        padding: 0 15px; /* Consistent horizontal padding for all containers on mobile */
+        padding: 0 15px;
     }
 
-    /* Header adjustments */
     .main-header {
-        padding: 0.75rem 0; /* Slightly less vertical padding for compact header */
+        padding: 0.75rem 0;
     }
     .main-header .container {
-        padding: 0 15px; /* Adjust header container padding for mobile */
+        padding: 0 15px;
     }
 
-    /* Hero Section adjustments */
     .hero {
-        height: 35vh; /* Further reduced height for a more compact hero section */
-        padding: 0 10px; /* Slightly less horizontal padding for tighter fit */
-        margin: 0.5rem auto; /* Reduce margin */
-        border-radius: 8px; /* Slightly less prominent rounding for mobile */
-        max-width: 95%; /* Make the hero section take more width on mobile */
+        height: 35vh;
+        padding: 0 10px;
+        margin: 0.5rem auto;
+        border-radius: 8px;
+        max-width: 95%;
     }
     .hero-content {
-        max-width: 80%; /* Allow content to take up more width on small screens relative to the new hero width */
+        max-width: 80%;
     }
     .hero-content .hero-logo {
-        width: 60%; /* Smaller logo scale with viewport width */
-        max-width: 150px; /* Further reduce max-width for smaller logo */
-        margin-bottom: 0.1rem; /* Further reduce margin for tighter packing */
+        width: 60%;
+        max-width: 150px;
+        margin-bottom: 0.1rem;
     }
     .hero-content h1 {
-        font-size: 5vw; /* Slightly smaller fluid font size for title */
-        line-height: 1.1; /* Tighter line height for the title */
-        margin-bottom: 0.5rem; /* Adjust margin */
+        font-size: 5vw;
+        line-height: 1.1;
+        margin-bottom: 0.5rem;
     }
-    /* Intro Section adjustments */
+    .btn-primary {
+        padding: 8px 18px;
+        font-size: 0.85rem;
+    }
     .intro-section {
-        padding: 3rem 0; /* Reduce section padding */
+        padding: 3rem 0;
     }
     .intro-section h2 {
-        font-size: 1.7rem; /* Smaller heading */
+        font-size: 1.7rem;
         margin-bottom: 0.75rem;
     }
     .intro-section .subheading {
         font-size: 1rem;
     }
     .intro-section p {
-        font-size: 0.95rem; /* Slightly smaller body text */
-        padding: 0 15px; /* Ensure paragraph text has horizontal padding */
+        font-size: 0.95rem;
+        padding: 0 15px;
     }
 
-    /* Image Section adjustments */
     .image-section {
-        padding: 1.5rem 0; /* Adjust padding */
+        padding: 1.5rem 0;
     }
     .battery-pack-image {
-        max-width: 90%; /* Allow image to take more width on mobile */
+        max-width: 90%;
     }
 
-    /* About Us Section adjustments */
     .about {
-        flex-direction: column; /* Stack columns */
-        align-items: center; /* Center content when stacked */
-        gap: 20px; /* Reduce gap */
-        padding: 30px 0; /* Adjust padding */
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 30px 0;
     }
     .about-image {
-        display: none; /* Hide image on mobile */
+        display: none;
     }
     .about-content h1 {
-        font-size: 2.5em; /* Adjust About Us title size */
+        font-size: 2.5em;
         text-align: center;
     }
     .about-section {
-        padding: 3rem 15px; /* Adjust padding for mobile */
+        padding: 3rem 15px;
     }
     .about-text p {
-        padding: 0 10px; /* Add slight horizontal padding for about text */
+        padding: 0 10px;
     }
 
-    /* Featured Products Section adjustments */
     .featured-products-section {
         padding: 3rem 0;
     }
     .featured-products-header {
-        flex-direction: column; /* Stack title and "View all" */
+        flex-direction: column;
         text-align: center;
-        margin-bottom: 1.5rem; /* Reduce space */
-        padding: 0 15px; /* Adjust header padding */
+        margin-bottom: 1.5rem;
+        padding: 0 15px;
     }
     .featured-products-title {
-        font-size: 2rem; /* Adjust title size */
-        margin-bottom: 0.5rem; /* Add small margin */
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
     }
     .product-grid {
-        grid-template-columns: 1fr; /* Single column on mobile */
-        gap: 1rem; /* Reduce gap between cards */
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
     .product-card {
-        padding: 1rem; /* Reduce card padding */
+        padding: 1rem;
     }
     .product-image {
-        height: 120px; /* Slightly smaller fixed height for product images */
+        height: 120px;
     }
     .product-title {
         font-size: 1.1rem;
@@ -626,55 +605,53 @@ body {
         font-size: 1.4rem;
     }
 
-    /* CTA Section adjustments */
     .cta-section {
         padding: 3rem 0;
     }
     .cta-container {
-        flex-direction: column; /* Stack columns */
+        flex-direction: column;
         text-align: center;
-        gap: 2rem; /* Adjust gap */
+        gap: 2rem;
     }
     .cta-text h2 {
         font-size: 1.8rem;
     }
     .cta-text p {
         font-size: 1rem;
-        max-width: 90%; /* Adjust max-width to be more fluid */
-        margin: 0 auto 1.5rem auto; /* Center paragraph */
+        max-width: 90%;
+        margin: 0 auto 1.5rem auto;
     }
     .cta-images {
-        flex-direction: column; /* Stack images vertically */
-        align-items: center; /* Center stacked images */
+        flex-direction: column;
+        align-items: center;
         gap: 1rem;
         width: 100%;
     }
     .cta-images img {
-        width: 80%; /* Images take more width when stacked */
-        max-width: 300px; /* Prevent images from getting too big */
+        width: 80%;
+        max-width: 300px;
     }
 
-    /* Footer adjustments */
     .site-footer {
         padding-top: 3rem;
     }
     .footer-grid {
-        grid-template-columns: 1fr; /* Single column for mobile */
+        grid-template-columns: 1fr;
         text-align: center;
         gap: 1.5rem;
     }
     .footer-column {
-        margin-bottom: 1rem; /* Add space between stacked columns */
+        margin-bottom: 1rem;
     }
     .footer-logo-section {
-        margin-bottom: 1.5rem; /* Space below centered logo */
+        margin-bottom: 1.5rem;
     }
     .footer-logo {
-        max-width: 150px; /* Smaller footer logo */
+        display: none;
     }
     .contact-list li,
     .social-links li {
-        justify-content: center; /* Center contact/social list items */
+        justify-content: center;
     }
     .footer-bottom {
         padding: 1rem 0;
@@ -682,8 +659,6 @@ body {
     }
 }
 
-
-/* --- Scroll Animation --- */
 .reveal-on-scroll {
     opacity: 0;
     transform: translateY(50px);
